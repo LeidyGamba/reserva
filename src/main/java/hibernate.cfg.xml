@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">123456789</property>
+        <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/reservdb</property>
+        <property name="hibernate.connection.username">leidygamba</property>
+        <property name="hibernate.default_schema">reservdb</property>
+        <mapping resource="com/reservita/demo/modelo/Establecimiento.hbm.xml" />
+        <mapping resource="com/reservita/demo/modelo/Rol.hbm.xml" />
+        <mapping resource="com/reservita/demo/modelo/Menu.hbm.xml" />
+        <mapping resource="com/reservita/demo/modelo/Reserva.hbm.xml" />
+        <mapping resource="com/reservita/demo/modelo/Usuario.hbm.xml" />
+        <mapping resource="com/reservita/demo/modelo/Factura.hbm.xml" />
+        <mapping resource="com/reservita/demo/modelo/Mesa.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>
